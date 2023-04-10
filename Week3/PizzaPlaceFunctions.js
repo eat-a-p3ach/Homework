@@ -18,16 +18,17 @@ greetCustomer();
 // 3
 
 function getPizzaOrder(size, crust, ...toppings) {
-  let order = "One large thick crust pizza with ";
-  for (let topping of pizzaToppings) {
-    order += `${topping},  + "coming up!"`;
-  }
+  let order = `One ${size} ${crust} crust pizza with ${toppings} coming up!`;
   console.log(order);
 }
-getPizzaOrder();
+getPizzaOrder("large", "thick", "cheese", " mushrooms", " and sausage");
 
 // 4
-function preparePizza(const items = [size: XL, crust: stuffed, pizzaToppings]) {
+function preparePizza() {
   let print = "...Cooking pizza...";
-
+  {
+  }
+  console.log();
 }
+
+//const items = [size: XL, crust: stuffed, pizzaToppings]
