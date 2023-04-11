@@ -118,6 +118,7 @@ $gradient-radial: radial-gradient(#00563Bff, #3F7969ff, #7F9C97ff, #BEBFC5ff);
 
 ### <u>User Flow Diagram</u>
 https://app.diagrams.net/#Heat-a-p3ach%2FHomework%2Fdevelopment%2FWeek1%2FUntitled%20Diagram.drawio
+![User Flow Diagram](./UserFlow.JPG)
 
 ### <u>SWOT Analysis</u>
 https://app.mural.co/t/lhodge9855/m/lhodge9855/1681140775333/ca4ae5d4427f42ca61de3a5c94a893c458acf4b5?sender=ud4721716ff95de1ee5404845

@@ -1,11 +1,5 @@
 // 1-2
-const pizzaToppings = [
-  "cheese",
-  "sausage",
-  "mushrooms",
-  "greenpeppers",
-  "bacon"
-];
+let pizzaToppings = ["cheese", "sausage", "mushrooms", "greenpeppers", "bacon"];
 function greetCustomer() {
   let greeting = "Welcome to Pizza Planet! Our toppings are ";
   for (let topping of pizzaToppings) {
@@ -13,22 +7,37 @@ function greetCustomer() {
   }
   console.log(greeting);
 }
-greetCustomer();
 
 // 3
 
 function getPizzaOrder(size, crust, ...toppings) {
   let order = `One ${size} ${crust} crust pizza with ${toppings} coming up!`;
   console.log(order);
+  return [size, crust, toppings];
 }
-getPizzaOrder("large", "thick", "cheese", " mushrooms", " and sausage");
 
 // 4
-function preparePizza() {
-  let print = "...Cooking pizza...";
-  {
-  }
-  console.log();
+function preparePizza([size, crust, toppings]) {
+  console.log("...Cooking pizza...");
+  let obj = {
+    size: size,
+    crust: crust,
+    toppings: toppings
+  };
+  return obj;
 }
+console.log();
 
-//const items = [size: XL, crust: stuffed, pizzaToppings]
+// 5
+function servePizza(obj) {
+  console.log(
+    `Order up! Here ${obj.size}, ${obj.crust} pizza with ${obj.toppings}. Enjoy!`
+  );
+}
+// 6
+greetCustomer();
+servePizza(
+  preparePizza(
+    getPizzaOrder("XL", "thick", "cheese", " mushrooms", " and sausage")
+  )
+);
