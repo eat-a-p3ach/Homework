@@ -1,0 +1,26 @@
+* {
+  font-family:sans-serif
+}
+
+header {
+  font-size:22px;
+  font-weight: bold;
+  color:white;
+  background-color:black
+}
+
+h3 {
+  font-weight:bold;
+  color:darkblue
+}
+
+.list {
+  color:darkslategrey;
+  font-weight:bold;
+}
+
+#char {
+  font-style: italic;
+  background-color: maroon;
+
+}
