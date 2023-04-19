@@ -1,0 +1,57 @@
+html {
+  background-color: antiquewhite;
+}
+
+#introPic {
+  width:30%;
+  height:30%;
+}
+
+#bio {
+  margin:auto;
+}
+#bio > li {
+  padding: 3px;
+  list-style-position: inside;
+}
+
+body {
+  text-align: center;
+  font-size: 30px;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  align-content: center
+}
+
+h1 {
+  font-size: 50px;
+}
+
+img {
+  max-width: 500px;
+  max-width: 500px;
+}
+
+div {
+  border: 2px solid burlywood;
+  margin: 15px;
+  padding: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#pro {
+  width: auto;
+}
+
+#achievements {
+  list-style-position: inside;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 844px) {
+}
