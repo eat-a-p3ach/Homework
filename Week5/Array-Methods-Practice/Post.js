@@ -1,4 +1,4 @@
-[
+const data = [
   {
     userId: 1,
     id: 1,
@@ -355,3 +355,11 @@
       "error suscipit maxime adipisci consequuntur recusandae\nvoluptas eligendi et est et voluptates\nquia distinctio ab amet quaerat molestiae et vitae\nadipisci impedit sequi nesciunt quis consectetur"
   }
 ];
+
+//create a list of user 5's posts
+let list = data.filter(elements => elements.userId === 5);
+console.log(list);
+
+//then, create a list of title and body pairs
+let pairs = data.map(elements => elements.title + elements.body);
+console.log(pairs);
