@@ -308,5 +308,14 @@ let todos = data.filter(item => item.userId === 3);
 console.log(todos);
 
 //then find the number of user 3's incomplete tasks
-let incomplete = data.filter(item => item.completed === false);
+// let incomplete = data.filter(
+//   item => item.completed === false && item.userId === 3
+// );
+// console.log(incomplete.length);
+let incomplete = todos.filter(incom => incom.completed === false);
 console.log(incomplete.length);
+
+// const incompletetask = data.map(task => {
+//   if (task ["completed"] === false){
+//   console.log(task)}
+//   });  Sun study hall Marshall
